@@ -1,5 +1,7 @@
 package br.unaerp.appestagio.Controller
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
@@ -39,6 +41,14 @@ class AnuncioActivity : AppCompatActivity() {
         val txtDti = findViewById<TextView>(R.id.txtAnuncioDti)
         val txtDtf = findViewById<TextView>(R.id.txtAnuncioDtf)
         val txtDescricao = findViewById<TextView>(R.id.txtAnuncioDescricao)
+
+
+        txtTelefone.setOnClickListener {
+            val intent = Intent(Intent.ACTION_DIAL)
+            var phoneNumber = txtTelefone.text.toString()
+            intent.data = Uri.parse("tel:$phoneNumber")
+            startActivity(intent)
+        }
 
         btnVoltar.setOnClickListener {
             finish()
