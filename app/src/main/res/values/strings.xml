@@ -30,7 +30,7 @@
     <string name="email_contato">Email Contato</string>
     <string name="telefone_contato">Telefone Contato</string>
     <string name="cidade">Cidade</string>
-    <string name="data_expira_o">Data Expiração ##/##/####</string>
+    <string name="data_expira_o">Data Expiração</string>
     <string name="remunera_o">Remuneração</string>
     <string name="mostra_anunciante">Mostra Anunciante</string>
     <string name="nao_mostra_anunciante">Não mostra Anunciante</string>

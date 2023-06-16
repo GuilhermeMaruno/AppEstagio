@@ -54,7 +54,7 @@ class AnunciosCriadosFragment : Fragment(), AnuncioAdapter.OnItemClickListener {
                     val key = dataSnapshot.key
                     val anuncio = dataSnapshot.getValue(Anuncio::class.java)
                     if (key != null && anuncio != null) {
-                        if(adapter.comparaData(anuncio.dti,anuncio.dtf)>=0){
+                        if(adapter.comparaData(anuncio.dti,anuncio.dtf)<0){
                             anuncio.id = key
                             listAnuncios.add(anuncio)
                         }else{
