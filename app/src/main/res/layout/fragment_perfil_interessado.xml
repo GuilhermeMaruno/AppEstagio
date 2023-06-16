@@ -1,0 +1,77 @@
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/branco"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutTelaPerfilAnun"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ui.main.FragmentPerfilInteressado">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutDados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".ui.main.FragmentPerfilInteressado">
+
+            <TextView
+                android:id="@+id/txtAnuncianteNome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/layoutDados"
+
+                android:text="@string/nome"
+                android:textColor="@color/preto"
+                android:textStyle="bold"
+                android:textSize="28sp"
+                />
+
+            <TextView
+                android:id="@+id/txtAnuncianteEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="40dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/txtAnuncianteNome"
+
+                android:text="@string/email"
+                android:textColor="@color/preto"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtAnuncianteTipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtAnuncianteEmail"
+
+                android:text="@string/interessado"
+                android:textColor="@color/preto"
+                android:textSize="16sp" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

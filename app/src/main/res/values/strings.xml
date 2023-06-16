@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">AppEstagio</string>
+    <string name="appNome">APP</string>
+    <string name="login">LOGIN</string>
+    <string name="cadastro">CADASTRO</string>
+    <string name="title_activity_principal">Principal</string>
+    <string name="tab_text_1">Perfil</string>
+    <string name="tab_text_2">Anúncios</string>
+    <string name="nome">Nome</string>
+    <string name="email">Email</string>
+    <string name="interessado">Interessado</string>
+    <string name="anunciante">Anunciante</string>
+    <string name="anuncios_criados">Anuncios Criados</string>
+    <string name="local">Local</string>
+    <string name="descricao">Descricao</string>
+    <string name="telefone">Telefone</string>
+    <string name="remuneracao">Remuneração</string>
+    <string name="dti">DtI</string>
+    <string name="dtf">DtF</string>
+    <string name="area">Area</string>
+    <string name="btnVoltar"><![CDATA[<<]]></string>
+    <string name="senha">Senha</string>
+    <string name="telaLogin">Login</string>
+    <string name="criar_conta">Criar Conta</string>
+    <string name="Title_activity_login">Login</string>
+    <string name="Title_activity_cadastro">Cadastro</string>
+    <string name="criar_an_ncio">Criar Anúncio</string>
+    <string name="Title_activity_criar_anuncio">CriarAnuncio</string>
+    <string name="t_tulo">Título</string>
+    <string name="email_contato">Email Contato</string>
+    <string name="telefone_contato">Telefone Contato</string>
+    <string name="cidade">Cidade</string>
+    <string name="data_expira_o">Data Expiração ##/##/####</string>
+    <string name="remunera_o">Remuneração</string>
+    <string name="mostra_anunciante">Mostra Anunciante</string>
+    <string name="nao_mostra_anunciante">Não mostra Anunciante</string>
+    <string name="descri_o">Descrição...</string>
+    <string name="titulo_anuncio">Titulo Anuncio</string>
+    <string name="rea_de_conhecimento">Àrea de conhecimento</string>
+    <string name="Title_activity_tela_anuncio_detalhes">TelaAnuncioDetalhes</string>
+    <string name="meioData">-</string>
+    <string name="detalhes">Detalhes</string>
+    <string name="local_lbl">Local:  </string>
+    <string name="lbl_remuneracao">Remuneração:  </string>
+    <string name="lbl_anunciante">Anunciante:  </string>
+    <string name="esqueci_minha_senha">Esqueci Minha Senha</string>
+    <string name="resetar_senha">Resetar Senha</string>
+
+    <string-array name="arrayTipos">
+        <item>Interessado</item>
+        <item>Anunciante</item>
+    </string-array>
+
+    <string-array name="arrayAreas">
+        <item>Técnologia</item>
+        <item>Saúde</item>
+        <item>Marketing</item>
+        <item>Comunicação</item>
+        <item>Engenharia</item>
+    </string-array>
+</resources>

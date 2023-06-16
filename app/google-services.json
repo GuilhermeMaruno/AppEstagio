@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1065330854288",
+    "project_id": "estagioapp-78820",
+    "storage_bucket": "estagioapp-78820.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1065330854288:android:38e63d0ca3f22801638b15",
+        "android_client_info": {
+          "package_name": "br.unaerp.appestagio"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1065330854288-jtcs5bbop7af611f1842in9u7dqeqdbr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLpe557c7fjJcpIhW9he0pMK1ud3wudbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1065330854288-jtcs5bbop7af611f1842in9u7dqeqdbr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

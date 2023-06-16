@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Controller.LoginActivity"
+    android:background="@color/primario">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <Button
+            android:id="@+id/btnCriaAnuncioVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@null"
+            android:minHeight="?attr/actionBarSize"
+            android:padding="@dimen/appbar_padding"
+            android:text="@string/btnVoltar"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:textColor="@color/branco"
+            android:textSize="18sp"
+            tools:ignore="RtlSymmetry" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/primario">
+
+        <TextView
+            android:id="@+id/txtCriarAnuncio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/criar_an_ncio"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/branco"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_round_corner"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:backgroundTint="@color/branco"
+            android:padding="32dp">
+
+            <EditText
+                android:id="@+id/edtTitulo"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/preto"
+                android:maxLength="20"
+
+                android:paddingStart="20dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="@color/preto"
+
+                android:textSize="14sp"
+                android:hint="@string/t_tulo"
+                />
+
+            <EditText
+                android:id="@+id/edtAnuncioEmail"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtTitulo"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/preto"
+
+                android:paddingStart="20dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/preto"
+
+                android:maxLength="50"
+                android:textSize="14sp"
+                android:hint="@string/email_contato"
+                />
+
+            <EditText
+                android:id="@+id/edtTelefone"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtAnuncioEmail"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/preto"
+                android:inputType="number"
+                android:maxLength="14"
+
+                android:paddingStart="20dp"
+                android:backgroundTint="@color/preto"
+
+                android:textSize="14sp"
+                android:hint="@string/telefone_contato"
+                />
+
+            <EditText
+                android:id="@+id/edtCidade"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtTelefone"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/preto"
+
+                android:paddingStart="20dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/preto"
+
+                android:maxLength="50"
+                android:textSize="14sp"
+                android:hint="@string/cidade"
+                />
+
+            <EditText
+                android:id="@+id/edtDtF"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtCidade"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/preto"
+                android:inputType="date"
+
+                android:paddingStart="20dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/preto"
+
+                android:maxLength="10"
+                android:textSize="14sp"
+                android:hint="@string/data_expira_o"
+                />
+
+            <EditText
+                android:id="@+id/edtRemuneracao"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtDtF"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/preto"
+                android:inputType="numberDecimal"
+
+                android:paddingStart="20dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/preto"
+
+                android:maxLength="10"
+                android:textSize="14sp"
+                android:hint="@string/remunera_o"
+                />
+
+            <Spinner
+                android:id="@+id/txtArea"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/edtRemuneracao"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                android:paddingStart="8dp"
+
+                android:layout_marginTop="8dp"
+
+                android:backgroundTint="@color/preto"
+
+                android:entries="@array/arrayAreas" />
+
+            <ToggleButton
+                android:id="@+id/mostraAnunciante"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtArea"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="8dp"
+                android:textSize="14sp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:background="@color/secundario"
+                android:textColor="@color/preto"
+                android:textOff="@string/nao_mostra_anunciante"
+                android:textOn="@string/mostra_anunciante" />
+
+            <EditText
+                android:id="@+id/edtDescricao"
+                android:layout_width="300dp"
+                android:layout_height="48dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mostraAnunciante"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:textColor="@color/preto"
+
+                android:paddingStart="20dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/preto"
+
+                android:textSize="14sp"
+                android:hint="@string/descri_o"
+                />
+
+            <Button
+                android:id="@+id/btnCriarAnuncio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/criar_an_ncio"
+                android:textColor="@color/branco"
+                app:layout_constraintTop_toBottomOf="@+id/edtDescricao"
+                android:layout_marginStart="24dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginTop="8dp"
+
+                android:maxLength="255"
+                android:backgroundTint="@color/secundario"
+                android:background="@drawable/rounded_corner"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>

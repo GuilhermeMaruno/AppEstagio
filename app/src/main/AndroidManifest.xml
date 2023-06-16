@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppEstagio"
+        tools:targetApi="31" >
+        <activity
+            android:name=".Controller.TelaPrincipal"
+            android:exported="false"
+            android:label="@string/title_activity_principal"
+            android:theme="@style/Theme.AppEstagio.NoActionBar" />
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".Controller.LoginActivity"
+            android:label="@string/Title_activity_login">
+        </activity>
+
+        <activity
+            android:name=".Controller.CadastroActivity"
+            android:label="@string/Title_activity_cadastro"/>
+
+        <activity
+            android:name=".Controller.CriarAnuncioActivity"
+            android:label="@string/Title_activity_criar_anuncio"/>
+
+        <activity
+            android:name=".Controller.AnuncioActivity"
+            android:label="@string/Title_activity_tela_anuncio_detalhes"/>
+
+        <activity
+            android:name=".Controller.EsqueciSenhaActivity"
+            android:label="@string/esqueci_minha_senha"/>
+
+    </application>
+
+</manifest>

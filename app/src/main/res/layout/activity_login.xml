@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Controller.LoginActivity"
+    android:background="@color/primario">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <Button
+            android:id="@+id/btnLoginVoltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:background="@null"
+            android:minHeight="?attr/actionBarSize"
+            android:padding="@dimen/appbar_padding"
+            android:text="@string/btnVoltar"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:textColor="@color/branco"
+            android:textSize="18sp"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btnLoginCriarConta"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:gravity="center"
+            android:minHeight="?actionBarSize"
+            android:background="@null"
+            android:textSize="14sp"
+
+            android:padding="@dimen/appbar_padding"
+            android:text="@string/criar_conta"
+            android:textAppearance="@style/TextAppearance.Widget.AppCompat.Toolbar.Title"
+            android:textColor="@color/branco"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/primario">
+
+        <TextView
+            android:id="@+id/txtDigite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/telaLogin"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="@color/branco"
+            android:layout_marginStart="30dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_round_corner"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/branco"
+        android:padding="32dp">
+
+        <EditText
+            android:id="@+id/edtUsuario"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/preto"
+
+            android:paddingStart="20dp"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="@color/preto"
+
+            android:textSize="16sp"
+
+            android:hint="@string/email"
+            android:inputType="text"
+
+            android:importantForAutofill="no" />
+
+
+        <EditText
+            android:id="@+id/edtSenha"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edtUsuario"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/preto"
+
+            android:paddingStart="20dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/preto"
+
+            android:textSize="16sp"
+
+            android:hint="@string/senha"
+            android:inputType="textPassword"
+
+            android:importantForAutofill="no" />
+
+        <Button
+            android:id="@+id/btnLogar"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edtSenha"
+            android:text="@string/login"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="16sp"
+            android:textColor="@color/branco"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_margin="8dp"
+
+
+            android:backgroundTint="@color/secundario"
+            android:background="@drawable/rounded_corner"
+            />
+
+        <Button
+            android:id="@+id/btnEsqueciSenha"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btnLogar"
+            android:text="Esqueci minha senha"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:textSize="14sp"
+            android:textColor="@color/secundario"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_margin="8dp"
+
+
+            android:backgroundTint="@color/branco"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
